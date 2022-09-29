@@ -9,11 +9,14 @@ namespace TesteTargetSistemas {
             // Cria a sequência de Fibonacci
             List<int> sequence = CreateFibonacciSequence(targetNumber);
 
-            foreach(int number in sequence) {
-                Console.WriteLine(number);
+            // Verifica se o valor procurado pertence à sequência e imprime o resultado
+            if (!sequence.Contains(targetNumber)) {
+                Console.WriteLine($"O valor {targetNumber} não pertence à sequência de Fibonacci");
+                return false;
             }
 
-            return false;
+            Console.WriteLine($"O valor {targetNumber} pertence à sequência de Fibonacci");
+            return true;
         }
 
         public List<int> CreateFibonacciSequence(int targetNumber) {

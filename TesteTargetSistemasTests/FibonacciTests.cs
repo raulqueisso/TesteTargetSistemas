@@ -7,9 +7,18 @@ using System.Text;
 namespace TesteTargetSistemas.Tests {
     [TestClass()]
     public class FibonacciTests {
-        [TestMethod()]
+        [TestMethod("Testa se o número pertence à sequência de Fibonacci")]
         public void IsNumberOnFibonacciSequenceTest() {
-            Assert.Fail();
+            Fibonacci fibonacci = new Fibonacci();
+
+            Assert.IsTrue(fibonacci.IsNumberOnFibonacciSequence(21));
+        }
+
+        [TestMethod("Testa se o número não pertence à sequência de Fibonacci")]
+        public void IsNumberNotOnFibonacciSequenceTest() {
+            Fibonacci fibonacci = new Fibonacci();
+
+            Assert.IsFalse(fibonacci.IsNumberOnFibonacciSequence(17));
         }
 
         [TestMethod("Testa se a sequência de Fibonacci está certa")]
