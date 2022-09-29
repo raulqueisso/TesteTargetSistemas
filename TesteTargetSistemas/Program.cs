@@ -3,7 +3,8 @@
 namespace TesteTargetSistemas {
     class Program {
         static void Main(string[] args) {
-            RunFibonacci();
+            Faturamento faturamento = new Faturamento();
+            faturamento.CalculateInvoicingPercentage();
         }
 
         static void RunSoma() {
