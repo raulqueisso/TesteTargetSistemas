@@ -3,7 +3,24 @@
 namespace TesteTargetSistemas {
     class Program {
         static void Main(string[] args) {
+            Console.WriteLine("Problema 1:");
+            RunSoma();
+            Console.ReadLine();
+
+            Console.WriteLine("Problema 2:");
+            RunFibonacci();
+            Console.ReadLine();
+
+            Console.WriteLine("Não recebi por e-mail os arquivos do problema 3.");
+            Console.ReadLine();
+
+            Console.WriteLine("Problema 4:");
+            RunFaturamento();
+            Console.ReadLine();
+
+            Console.WriteLine("Problema 5:");
             RunInverterString();
+            Console.ReadLine();
         }
 
         static void RunSoma() {
