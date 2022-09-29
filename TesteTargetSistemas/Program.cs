@@ -4,7 +4,7 @@ namespace TesteTargetSistemas {
     class Program {
         static void Main(string[] args) {
             Faturamento faturamento = new Faturamento();
-            faturamento.CalculateInvoicingPercentage();
+            faturamento.CalculaPercentualDeRepresentacao();
         }
 
         static void RunSoma() {
