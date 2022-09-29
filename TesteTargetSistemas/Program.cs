@@ -3,7 +3,7 @@
 namespace TesteTargetSistemas {
     class Program {
         static void Main(string[] args) {
-            RunFaturamento();
+            RunInverterString();
         }
 
         static void RunSoma() {
@@ -30,6 +30,14 @@ namespace TesteTargetSistemas {
         static void RunFaturamento() {
             Faturamento faturamento = new Faturamento();
             faturamento.CalculaPercentualDeRepresentacao();
+        }
+
+        static void RunInverterString() {
+            Console.WriteLine("Digite um texto: ");
+            var input = Console.ReadLine();
+
+            InverterString inverterString = new InverterString();
+            inverterString.Invert(input);
         }
     }
 }
