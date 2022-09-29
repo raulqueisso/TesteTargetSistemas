@@ -3,7 +3,8 @@
 namespace TesteTargetSistemas {
     class Program {
         static void Main(string[] args) {
-            RunSoma();
+            Fibonacci fibonacci = new Fibonacci();
+            fibonacci.IsNumberOnFibonacciSequence(34);
         }
 
         static void RunSoma() {
