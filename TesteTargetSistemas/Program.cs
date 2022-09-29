@@ -3,7 +3,13 @@
 namespace TesteTargetSistemas {
     class Program {
         static void Main(string[] args) {
-            Console.WriteLine("Hello World!");
+            RunSoma();
+        }
+
+        static void RunSoma() {
+            Soma soma = new Soma();
+
+            soma.PrintSomaResult();
         }
     }
 }
